@@ -3,7 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # 1. Connect to Gemini (We will hide the real key later for safety)
-genai.configure(api_key="YOUR_API_KEY")
+model = genai.GenerativeModel('gemini-1.5-flash')
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # 2. Your App's Interface
